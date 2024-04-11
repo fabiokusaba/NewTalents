@@ -15,5 +15,17 @@ namespace TestNewTalents
 
             Assert.Equal(resultado, resultadoCalculadora);
         }
+
+        [Theory]
+        [InlineData(1, 2, 2)]
+        [InlineData(4, 5, 20)]
+        public void TesteMultiplicar(int val1, int val2, int resultado)
+        {
+            Calculadora calc = new Calculadora();
+
+            int resultadoCalculadora = calc.multiplicar(val1, val2);
+
+            Assert.Equal(resultado, resultadoCalculadora);
+        }
     }
 }
