@@ -39,5 +39,17 @@ namespace TestNewTalents
 
             Assert.Equal(resultado, resultadoCalculadora);
         }
+
+        [Theory]
+        [InlineData(6, 2, 4)]
+        [InlineData(5, 5, 0)]
+        public void TesteSubtrair(int val1, int val2, int resultado)
+        {
+            Calculadora calc = new Calculadora();
+
+            int resultadoCalculadora = calc.subtrair(val1, val2);
+
+            Assert.Equal(resultado, resultadoCalculadora);
+        }
     }
 }
