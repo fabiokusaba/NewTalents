@@ -25,7 +25,7 @@ namespace NewTalents
 
         public int dividir(int val1, int val2)
         {
-            return 0;
+            return val1 / val2;
         }
 
         public List<string> historico()
