@@ -10,7 +10,7 @@ namespace NewTalents
     {
         public int somar(int val1, int val2)
         {
-            return 0;
+            return val1 + val2;
         }
 
         public int subtrair(int val1, int val2)
