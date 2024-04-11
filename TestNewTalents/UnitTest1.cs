@@ -5,7 +5,7 @@ namespace TestNewTalents
         [Fact]
         public void Test1()
         {
-
+            Calculadora calc = new Calculadora();
         }
     }
 }
