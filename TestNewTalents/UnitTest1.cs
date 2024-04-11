@@ -27,5 +27,17 @@ namespace TestNewTalents
 
             Assert.Equal(resultado, resultadoCalculadora);
         }
+
+        [Theory]
+        [InlineData(6, 2, 3)]
+        [InlineData(5, 5, 1)]
+        public void TesteDividir(int val1, int val2, int resultado)
+        {
+            Calculadora calc = new Calculadora();
+
+            int resultadoCalculadora = calc.dividir(val1, val2);
+
+            Assert.Equal(resultado, resultadoCalculadora);
+        }
     }
 }
