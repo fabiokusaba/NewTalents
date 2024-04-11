@@ -53,7 +53,9 @@ namespace NewTalents
 
         public List<string> historico()
         {
-            return new List<string>();
+            listaHistorico.RemoveRange(3, listaHistorico.Count - 3);
+
+            return listaHistorico;
         }
     }
 }
